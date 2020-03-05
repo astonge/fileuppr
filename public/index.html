@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div class="flex-grid">
+    <div class="col">
+    <form id="client-form" method="POST" enctype="multipart/form-data">
+      <p class="name">
+        <input name="first-name" type="text" required placeholder="First Name" id="first-name" value=""/>
+        <br/>
+        <input name="last-name" type="text" required placeholder="Last Name" id="last-name" value=""/>
+      </p>
+      <p class="email">
+        <input name="email" type="email" required id="client-email" placeholder="Email" value=""/>
+      </p>
+      <p class="text">
+        <input name="business" type="text" required id="business-name" placeholder="Business Name" value=""/>
+      </p>
+      <p class="file">
+        <input name="files[]" type="file" id="client-files" class="feedback-input" multiple>
+        <div id="file-list">
+        </div>
+      </p>
+      <div class="submit">
+        <button type="submit" class="myButton button-blue">Upload Files</button>
+      </div>
+    </form>
+    </div>
+    <div class="col">
+      <div id="response"></div>
+    </div>
+  </div>
+
+</body>
+<script src="js/main.js"></script>
+</html>

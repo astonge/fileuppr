@@ -1,0 +1,21 @@
+{
+  "name": "infotelmm-fileupload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6-alpha.6"
+  },
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "moment": "^2.24.0",
+    "mv": "^2.1.1",
+    "nodemon": "^1.19.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
